@@ -38,7 +38,10 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps(){
-  const allPostsData = getSortedPostDate();
+  const allPostsData = await getSortedPostData();
+  console.log("\n\n\n\n\n\n");
+  console.log("allPostsData   " + allPostsData);
+  console.log("\n\n\n\n\n\n");
   return {
     props: {
       allPostsData,
