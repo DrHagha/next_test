@@ -5,7 +5,7 @@ import Link from "next/link";
 import Layout, { siteTitle } from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import { getSortedPostData } from "../lib/posts";
-import Date from "../components/Date";
+import Date from "../components/date";
 
 export default function Home({ allPostsData }) {
   return (
