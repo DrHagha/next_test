@@ -38,7 +38,7 @@ export default function Home({ allPostsData }) {
 }
 
 export async function getStaticProps(){
-  const allPostsData = getSortedPostData();
+  const allPostsData = getSortedPostDate();
   return {
     props: {
       allPostsData,
