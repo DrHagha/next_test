@@ -1,12 +1,10 @@
-export default function Page({ params }) {
-  return <div>My Post: {params.slug}</div>
-}
+"use client"
 
-export async function generateStaticParams(){
-    console.log("hello world")
-    const posts = await fetch('https://.../posts').then((res) => res.json())
-
-    return posts.map((post) => ({
-        slug : post.slug
-    }))
+export default function Page({ params }){
+    return (
+        <div>
+            <h1>posts</h1>
+            <h2>{params.slug}</h2>
+        </div>
+    );
 }
